@@ -12,3 +12,28 @@ greeting()
 
 
 def greetings(msg="hello there!", num=0):
+	    print("Our functions says",msg, "The second arg is", num)
+
+
+greetings()
+greetings("This is an argument", 1)
+greetings("why we are arguing?", 2)
+
+myVariableNumber = 0
+
+
+def someMath(num1=2, num2=5):
+	global myVariableNumber
+
+	
+	myVariableNumber = num1 + num2
+	return num1 + num2
+
+
+sum = someMath()
+print("Our sum variable is:", sum, "myVariableNumber is also", sum)
+
+sum = someMath()
+print
+sum = someMath()
+print("Our sum variable is:", sum)
